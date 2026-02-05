@@ -1,0 +1,15 @@
+project_id = "dlgeroyjfmnasyxkwxbp"
+
+[functions.send-status-notification]
+verify_jwt = true
+
+[functions.send-welcome-email]
+verify_jwt = true
+
+[functions.send-quote-confirmation]
+verify_jwt = true
+
+# Note: This function handles JWT verification internally with custom admin role checks
+# Setting verify_jwt = false allows the function to receive the request and perform its own auth
+[functions.send-admin-invitation]
+verify_jwt = false
